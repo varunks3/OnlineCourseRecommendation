@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>guru</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<style type="text/css">
+		.bckbtn{
+  float: right;
+  background-color: green;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+
+  }
+	</style>
+</head>
+<body>
+<h2>Login As Admin</h2>
+ <button class="bckbtn"><a href="login.html">BACK</a></button><br>
+
+<form action="adminlog.php" method="post">
+  <div class="imgcontainer">
+    <img src="login.jpg" alt="Avatar" class="avatar" style="width: 160px; height: 160px">
+
+  </div>
+
+  <div class="container">
+    <label for="UserID" ><b>UserID(Maximum 20 characters)</b></label><br>
+    <input type="text" placeholder="Enter AdminName" name="adminname" required><br>
+
+    <label for="psw"><b>Password( maximum 10 characters)</b></label><br>
+    <input type="password" placeholder="Enter Password" name="pass" required><br>
+     
+    
+
+    <button type="submit" value="Insert">Login</button><br>
+    
+  </div>
+</form>
+</body>
+</html>

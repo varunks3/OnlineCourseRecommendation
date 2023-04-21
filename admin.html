@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.btn{
+			text-align: center;
+			}
+		button{
+				background-color: #4CAF50;
+				color: white;
+    			padding: 14px 20px;
+  				margin: 8px 0;
+  				border: none;
+  				cursor: pointer;
+ 				width: 50%;
+			}
+			button:hover {
+  opacity: 0.8;
+}
+	.bckbtn{
+  float: right;
+  background-color: red;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+
+  }
+	</style>
+	<script type="text/javascript">
+		function userevent() {
+      document.location.href = "user.php";
+    }
+	function loginsevent() {
+      document.location.href = "logins.php";
+    }	
+    function courcesevent() {
+      document.location.href = "courses.php";
+    }
+	</script>
+</head>
+<body>
+	<button class="bckbtn"><a href="adminlog.html">LOGOUT</a></button>
+	<br><br>
+<h1 style="text-align: center;background-color: grey;">ADMINISTRATOR:</h1>
+	<div class="btn">
+	<br><br><br>
+<button type="button" onclick="userevent()"><img src="signup.png" style="width: 100px;height: 100px"><br><b>Users</b></button>
+<button type="button" onclick="loginsevent()"><img src="login.jpg" style="width: 100px;height: 100px"><br><b>Logins</b></button>
+<button type="button" onclick="courcesevent()"><img src="courses.jpg" style="width: 100px;height: 100px"><br><b>Courses</b></button>
+</div>
+</body>
+</html>
